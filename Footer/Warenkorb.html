@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link href="main.css" rel="stylesheet" />
+
+  <title>Warenkorb</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link href="main.css" rel="stylesheet" />
+</head>
+
+<header >
+
+  <div class="cHead">
+  <span class="cLogo"></span>
+  <a href="index.html" class="cHome">Home </a>
+  <a href="ProduktExamples.html" class="cExamples">Produkte</a>
+  <a href="UeberUns.html" class="cWe">Über uns</a>
+  <a href="accessoires.html" class="cAccessoires">Accessoires</a>
+  <a href="Contact.html" class="cContact">Kontakt</a>
+  <div class="cIntroVideo"> <a href="#"> ▷ </a>Intro-Video</a></div>
+  <a href="Warenkorb.html">
+  <img src="images/shopping-bag.png" class="cWare" alt="Warenkorb">
+  </a>
+</div>
+</header>
+
+<body>
+<div class="cBody"></div>
+
+
+<div style="display: flex; text-align: center; ">
+  <!--_________________ZUBEHÖRTEILE____________________________-->
+  <div id="myMöbel" class="cMyMöbel">
+  <h1>Deine Artikel</h1><br> 
+  <h2>Deine Accessories</h2>
+  <output id="outExtra1"> </output>
+<!--_________________KONFIGURATIONEN___________________________-->
+<!-- Hier wird der Container für die Möbelkonfigurationen dynamisch eingefügt -->
+  <h2>Deine Möbelstücke</h2>
+  <div id="accessories" class="accessories"></div>
+  <b>_________________________________________</b><br>
+  <b>Total</b>
+  <output id="iTotoal">€</output>
+  <br><br><br>
+  <button id="iClearButton" class="extra">Warenkorb löschen</button>
+</div>
+
+
+<!--________________FORMULAR____________________________________-->
+<form id="emailForm" class="cForm" method="post">
+  <label for="name">Ihr Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Max Mustermann" required><br><br>
+  
+  <label for="street">Straße:</label><br>
+  <input type="text" id="street" name="street" placeholder="Musterstraße" required><br><br>
+  
+  <label for="houseNumber">Hausnummer:</label><br>
+  <input type="text" id="houseNumber" name="houseNumber" placeholder="123" required><br><br>
+  
+  <label for="zip">Postleitzahl:</label><br>
+  <input type="text" id="zip" name="zip" placeholder="12345" required><br><br>
+  
+  <label for="city">Ort:</label><br>
+  <input type="text" id="city" name="city" placeholder="Musterstadt" required><br><br>
+
+  <label for="email">Ihre E-Mail-Adresse:</label><br>
+  <input type="email" id="email" name="email" placeholder="name@domain.com" required><br><br> 
+
+  <label for="message">Ihre Nachricht:</label><br>
+  <textarea id="message" name="message" placeholder="Ihre Nachricht" ></textarea><br><br><br>
+  
+  <button id="iSubmit" type="submit">Absenden</button>
+</form>
+</div>
+
+
+
+<!--_____________________AUFRUFE_______________________________-->
+  <script src= "globalVariable.js"></script>
+  <script src="Warenkorb.js"></script> 
+
+  <footer>
+    <div class="cFooterMain">
+    <div class="cFooterL">
+      <div class="cFooter1"><a>Sonderwunsch?</a><br><br>
+        <b>info@dieSchlosseria.de</b><br><br>
+        <a href="#">   <img src="images/pinterest.png" class="cSocialLogo"></a>
+        <a href="https://www.instagram.com/die.schlosseria/">   <img src="images/Instagram.png" class="cSocialLogo"></a>
+        <a href="#">   <img src="images/linkedIn.png" class="cSocialLogo"></a>
+        <a href="#">   <img src="images/youtube.png" class="cSocialLogo"></a><br><br>
+      </div>
+    </div>
+    <b class="cFooterDownL">PRODUCE YOUR OWN MEALT FRAME LOCALLY</b>
+  
+    <div class="cFooter2">
+      <b>Infos</b><br><br>
+      <p>Impressum</p>
+      <p>AGB</p>
+      <p>Datenschutz</p>
+      <p>Kontakt</p>
+      <p>Hilfe</p>
+    </div>
+  
+    <div class="cFooter3">
+      <b>Bedingungen</b><br><br>
+      <p>Lieferbeding</p>
+      <p>Zahlungsbedingungen</p>
+      <p>Gewährleistung</p>
+    </div>
+  
+    <img class="cFooterLogo" src="images/Logo.png" alt="DieSchlosseria">
+      <p class="cFooterDown">&copy;All rights reserved Copyrights DIE.SCHLOSSERIA GBR 2025.</p>
+  
+  </div>
+  
+  
+  </footer>
+
+
+</body>
+</html>

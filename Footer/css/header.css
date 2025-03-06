@@ -1,0 +1,158 @@
+
+  .cHead {
+  width: 100%;
+  position: relative; 
+  min-width: 500px;
+  height: 142px;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: space-between; /* Links, Mitte und rechts werden verteilt */
+  align-items: center; /* Vertikal zentriert */
+  padding: 0 20px; 
+}
+
+.cHeadLine {
+  display: flex;
+  gap: clamp(10px, 3vw, 40px); /* Mindestens 10px, maximal 40px */
+  justify-content: center;
+  align-items: center;
+  padding: 0px 2px 0px 2px;
+  white-space: nowrap;
+}
+
+.cHeadLine :hover{
+  opacity: 1.0;
+  color: black;
+}
+
+.cRight {
+  display: flex;
+  gap: clamp(10px, 3vw, 60px); /* Mindestens 10px, maximal 40px */
+  align-items: center;
+  opacity: 0.8;
+}
+
+.cRight :hover{
+  opacity: 1.0;
+  color: black;
+}
+
+.cIntroVideo {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  opacity: 0.8;
+}
+
+.cWare {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+}
+
+.cWareAct, .cWare:hover{
+  opacity: 1.0;
+  color: black;
+}
+
+.cHome {
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  .cExamples {
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  .cWe{
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  
+  .cAccessoires {
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  .cContact{
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 1;
+  }
+
+.cLogo {
+  width: 123px;
+  min-width: 100px; 
+  height: 115px;
+  background: center/cover no-repeat;
+  margin: 2px 2px 2px 2px;
+  padding: 2px 2px 2px 2px;
+}
+
+/* Hamburger-Button */
+.cMenu-icon {
+  color: #7A7A7A;
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  width: 40px;  
+  text-align: center;
+}
+
+.cMenu-icon :hover{
+  color: black;
+}
+
+/* Dropdown-Menü */
+.cDropdown-menu {
+  display: none;
+  position: absolute;
+  top: 90px;
+  left: 45%;
+  transform: translateX(-50%);
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 10;
+  width: 200px;
+  text-align: center;
+}
+
+/* Dropdown-Menü anzeigen */
+.show {
+  display: block;
+}
+
+.cDropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.cDropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.cHeadNavWrapper :hover{
+color: black;
+}
+
+/* Mobile-Ansicht */
+@media (max-width: 1000px) {
+  .cHeadLine {
+    display: none;
+  }
+
+  .cMenu-icon {
+    display: block;
+  }
+}

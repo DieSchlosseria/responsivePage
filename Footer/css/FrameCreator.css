@@ -1,0 +1,347 @@
+.cFrame {
+    width: auto;
+    position: relative;
+    top: 20px;
+    left: calc(50%) ; /* Schiebt es um 25px nach rechts */
+    transform: translateX(-50%); 
+    gap: clamp(0px, 3vw, 100px); /* Mindestens 10px, maximal 40px */
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0 20px; 
+    justify-content: center;
+
+  }
+
+  .cInputField{
+    width: 500px;
+    height: 660px;
+    background-color: #F5F5F5;
+    padding: 10px 10px 10px 5px;
+    position: static;
+    padding: 5px 20px 5px 20px;
+    gap: 10px;       
+    color: rgba(0,0,0,1);
+    font-weight: Light;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cHoover{
+  width: 560px;
+  height: 660px;
+  position: relative;
+  background-color: teal;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5px;
+  z-index: 0; /* Stellen sicher, dass der Container unten ist */
+  justify-content: center;
+  align-items: center;
+  }
+
+  #iHoverButton {
+    display: none; /* Standardmäßig ausgeblendet */
+    position: absolute; /* Der Button bleibt absolut im Bezug auf das SVG */
+    }
+
+    svg{
+        background-color: #f5f5f5;
+        display: flex;
+        position: relative; /* Fixiert das SVG an einer bestimmten Position */
+        opacity: 1;
+        z-index: -2; /* Niedrigerer Wert als das andere Element */
+        }
+
+        .cStepAbs{
+            display: flex;         /* Anordnung in einer Reihe */
+            align-items: center;   /* Vertikale Zentrierung */
+            gap: 10px;            /* Abstand zwischen den Elementen */
+            position: absolute;    
+            left: 20px;
+            top: 20px;
+          }
+
+          .cStepRel{
+            display: flex;         /* Anordnung in einer Reihe */
+            align-items: center;   /* Vertikale Zentrierung */
+            gap: 10px;            /* Abstand zwischen den Elementen */
+            position: relative;    
+            left: 20px;
+            top: 20px;
+          }
+  
+          .cStepNo {
+            color: rgba(0,0,0,1);
+            font-weight: medium;
+            font-size: 24px;
+            opacity: 1;
+            text-align: center;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
+            width: 40px; /* Breite */
+            height: 40px; /* Höhe gleich Breite */
+            line-height: 40px; /* Vertikale Zentrierung (Alternativ zu flex) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .cStepText {
+            color: rgba(0,0,0,1);
+            font-weight: medium;
+            font-size: 24px;
+            opacity: 1;
+            text-align: left;
+          }
+          
+        .cSubmitSub{
+          top: 600px; 
+          left: 100px;
+          display: flex;
+          background-position: center center;
+     
+        }
+  
+          .cTrash{
+            left: 20px;
+            top: 530px;
+            width: 33px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 0.7;
+            position: absolute;
+            margin: 10px 10px 10px 10px;
+            border: none;
+            cursor: pointer;
+            z-index: 5;
+          }
+          .cTrash:hover{
+            opacity: 1.0;
+          }
+  
+          .cDisplayLine {
+            top: 560px;
+            left: 330px;
+            position: absolute;
+            min-width: 210px;
+            font-size: 16px;
+          }
+  
+  .cAddBoard{
+    top: 601px;
+    left: 330px;
+    position: absolute;
+    min-width: 210px;
+    font-size: 16px;
+  }
+  
+  
+          
+  .cPerspBox{
+    left: 20px;
+    top: 606px; 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80px;
+    font-size: 20px;
+    margin-left: 0px 0px 0px 0px;
+    }
+  
+    #iPerspective{
+     width: 100px;
+  
+    }
+  
+    .cInputView {
+      left: 100px;
+      top: 10px;
+      position: absolute;
+      opacity: 1;
+      font-size: 20px;
+    }
+  
+    .cView{
+      left: 210px;
+      top: 601px; 
+      display: flex; 
+      position: absolute; 
+      color: black;
+      opacity: 1.0;
+      font-size: 20px; 
+    }
+
+    /*___________________________________Wichtig für FrameCreator __________________________________*/
+    
+
+/*_______________cube-Button________________________*/
+.cCube-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    display: none;
+    width: 10px; /* Neue Breite */
+    height: 5px; /* Neue Höhe */
+    padding: 0px 0px 0px 0px;
+    margin: 5px 5px 5px 5px;
+    left: 0px;
+}
+
+.cCube-button.cRed-button {
+    background-color: rgba(0, 162, 255, 0.11);
+    color: white;
+    width: 10px; /* Neue Breite */
+    height: 5px; /* Neue Höhe */
+    cursor: pointer;
+    outline: none;
+    position: fixed;
+    display: none;
+    padding: 0px 0px 0px 0px; /* Platz um den Text hinzufügen */
+    margin: 0px 0px 0px 0px;
+    font-size: 8px; /* Neue Schriftgröße */
+    left: 0px;
+}
+
+.cCube-line{
+
+  stroke: rgba(0, 0, 0, 0.241);
+  stroke-width: 2;
+  --default-line-color: #808080; /* Grau als Standardfarbe */
+  transition: stroke-width 0.2s, stroke-dasharray 0.2s; /* Übergang auch für stroke-dasharray */
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  left: 0px;
+  position: fixed;
+  stroke-dasharray: none;
+  opacity: 1.0;
+  z-index: -1;
+}
+
+.cCube-line.hovered {
+  stroke-width: 6;
+  stroke:  rgb(0, 0, 0);
+  position: fixed;  
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.iHoverButton{
+position: fixed;
+}
+
+  /*_________________FÜR_POPUP_Formular______________________*/
+
+  .cOverlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.cPopupHeadline {
+color: #000;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+.cLetter2 {
+color: #000;
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+.Letter3{
+color: #000;
+font-size: 15px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+
+
+
+
+
+.cClosePopup {
+color: #000000a8;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+position: absolute;
+top: 2px; 
+right: 2px; 
+font-size: 20px; 
+font-style:inherit;
+font-weight: 900;
+line-height: normal;
+text-align: center; 
+
+border: 8px 8px 8px 8px;
+cursor: pointer; 
+}
+
+.cPopup {
+padding: 30px 30px 30px 30px;
+position: fixed;
+top: 50%;
+left: 50%;
+width: auto;
+min-width: 280px;
+height:auto;
+transform: translate(-50%, -50%);
+background: #D9D9D9;
+padding: 20px;
+color: black;
+border: 1px solid #000;
+z-index: 999;
+border-radius: 5px;
+border-color: black;
+border: 8px 8px 8px 8px;
+}
+
+.cCloseButton{
+left: 240px;
+position: absolute;
+}
+
+    /* Wenn die Breite unter 900px fällt, wird das cInputField unter das cHoover geschoben */
+@media (max-width: 1100px) {
+    .cFrame {
+      flex-direction: column;
+      align-items: center; /* Zentriert die Elemente */
+      display: flex;
+      justify-content: space-between; /* Links, Mitte und rechts werden verteilt */
+    }
+  
+  }
+  
+  @media (max-width: 600px) {
+    .cFrame {
+      left: 300px;
+    }
+  
+  }

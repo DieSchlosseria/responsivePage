@@ -1,0 +1,222 @@
+
+html {
+  width: 100%;
+  min-width: 500px;
+  min-height: 100%;
+  margin: 0 0 0 0;
+  font-family: 'Rubik', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+}
+
+body{
+width: 100%;
+min-width: 500px;
+min-height: 100vh;
+margin: 0 0 0 0;
+font-family: 'Rubik', sans-serif; 
+flex-direction: column;
+display: flex;
+}
+header {
+  width: 100%;
+  min-width: 500px;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  margin: 0 0 0 0;
+  font-family: 'Rubik', sans-serif; 
+  display: flex;
+  z-index: 5;
+}
+
+a {
+    color: black; /* Setzt die Textfarbe auf schwarz für alle <a>-Tags */
+  }
+
+  a[href] {
+    color: #7A7A7A;
+    text-decoration: none; /* Fügt den Unterstrich wieder hinzu */
+  }
+
+  a :hover{
+    opacity: 1.0;
+    color: black;
+  }
+
+  a[href] :hover {
+    opacity: 1.0;
+    color: black;
+  }
+  
+  b{
+  margin-bottom: 10px;
+  }
+  
+  p{
+  margin-top: 0px;
+  margin-bottom: 5px;
+  
+  }
+  h1{
+  margin-bottom: 10px;
+  }
+  
+  h3{
+    position: static;
+    padding: 5px 10px 0px 0px;
+    margin: 5px 10px 0px 0px;
+    display:inline;
+    text-align: left;
+    font-size: 20px; 
+    font-weight: bold;
+  }
+  
+  h4{
+    padding: 5px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 8px;
+    display:inline;
+    left: 0px;
+    text-align: center;
+  
+  }
+  
+  input{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 8px;
+    display:inline;
+    left: 0px;
+    text-align: block;
+  }
+  
+
+  
+
+
+output{
+  margin-top: 0 px;
+  margin-bottom: 10 px;
+  position:static;
+  font-weight:bold;
+  }
+  
+  button{
+  cursor: pointer;
+  color: #0c272b;  
+  background-color: whitesmoke;
+  font-size: 16px;
+  font-style:inherit;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center; 
+  border: 8px 8px 8px 8px;
+  border-radius: 0PX;
+  opacity: 1.0;
+  }
+
+  
+  
+  button:hover{
+  font-weight: 1000;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  textarea{
+  width: 350px ;
+  background-color: gray;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: normal;
+  text-align: left; 
+  border: 8px 8px 8px 8px;
+  border-color: black;
+  border-radius:  5px 5px 5px 5px;
+  }
+
+/*_____________________________________________________________________________*/
+
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 24rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #2b8591;
+  border-radius: 0rem;
+  height: 0.4rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4.8px; /* Centers thumb on the track */
+  background-color: #585656;
+  border-radius: 0rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #585656;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #2b8591;
+  border-radius: 0rem;
+  height: 0.4rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #585656;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb{
+  outline: 3px solid #585656;
+  outline-offset: 0.125rem;
+}

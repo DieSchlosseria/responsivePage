@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="css/main.css" rel="stylesheet" />
+<link href="css/standard.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link rel="stylesheet" href="css/footer.css">
+
+<link href="css/FrameCreator.css" rel="stylesheet" />
+
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=500, initial-scale=1, user-scalable=yes">
+  <title>FrameCreator</title>
+
+  </a>
+</head>
+<header>
+  <div class="cHead">
+
+    <a href="#">
+      <img src="images/Logo.png" class="cLogo" alt="Logo">
+    </a>
+
+    <!-- Neuer Wrapper für das Menü -->
+    <div class="cHeadNavWrapper">
+      <div class="cHeadLine" id="menu">
+        <a class="cHome">Home</a>
+        <a class="cExamples" href="#">Produkte</a>
+        <a class="cWe" href="#">Über uns</a>
+        <a class="cAccessoires" href="#">Accessoires</a>
+        <a class="cContact" href="#">Kontakt</a>
+      </div>
+
+      <!-- Hamburger Menü Button -->
+      <div class="cMenu-icon" onclick="toggleMenu()">☰</div>
+
+      <!-- Dropdown-Menü -->
+      <div class="cDropdown-menu" id="iDropdownMenu">
+        <a class="cHome" href="#">Home</a>
+        <a class="cExamples" href="#">Produkte</a>
+        <a class="cWe" href="#">Über uns</a>
+        <a class="cAccessoires" href="#">Accessoires</a>
+        <a class="cContact" href="#">Kontakt</a>
+      </div>
+    </div>
+
+    <div class="cRight">
+      <div class="cIntroVideo"><a href="#">▷ </a> Intro-Video</div>
+      <a href="#">
+        <img src="images/shopping-bag.png" class="cWare" alt="Warenkorb">
+      </a>
+    </div>
+  </div>
+
+  <script src="js/header/header.js"></script>
+</header>
+
+<body>
+  <div class="cBody"></div>
+
+  <div class ="cFrame">
+  <div class="cHoover">
+
+
+    <span class = "cStepAbs">
+      <span class = "cStepNo">1.</span>
+      <span class="cStepText">Klicke auf die zu erstellende Linien: </span>
+    </span>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="550" height="650" viewBox="0 0 550 650">
+           <!-- Zeichne den Metallgestell mit Linien -->
+          <!--Vorderseite-->
+          <line class="cCube-line" id="iFrontTop" x1="50" y1="50" x2="275" y2="50" />
+          <line class="cCube-line" id="iTopMiddle"  x1="175" y1="50" x2="225" y2="0"/>
+          <line class="cCube-line" id="iFrontMiddleCross" x1="50" y1="75" x2="275" y2="75" />
+          <line class="cCube-line" id="iFrontMiddleLenght" x1="175" y1="50" x2="175" y2="150" />
+          <line class="cCube-line" id="iFrontRight" x1="275" y1="50" x2="275" y2="150" />
+          <line class="cCube-line" id="iFrontBottom" x1="275" y1="150" x2="50" y2="150" />
+          <line class="cCube-line" id="iFrontLeft" x1="50" y1="150" x2="50" y2="50" />
+  
+          <!--Rückseite-->
+          <line class="cCube-line" id="iBackTop" x1="125" y1="0" x2="325" y2="0" />
+          <line class="cCube-line" id="iBackMiddleCross" x1="125" y1="25" x2="325" y2="25" />
+          <line class="cCube-line" id="iBackMiddleLenght" x1="225" y1="0" x2="225" y2="100" />
+          <line class="cCube-line" id="iBackRight" x1="325" y1="0" x2="325" y2="100" />
+          <line class="cCube-line" id="iBackBottom" x1="325" y1="100" x2="125" y2="100" />
+          <line class="cCube-line" id="iBackLeft" x1="125" y1="100" x2="125" y2="0" />
+          <!--Links-->
+          <line class="cCube-line" id="iLeftTop" x1="50" y1="50" x2="125" y2="0" />
+          <line class="cCube-line" id="iLeftMiddleCross" x1="50" y1="75" x2="125" y2="25" />
+          <line class="cCube-line" id="iLeftBottom" x1="50" y1="150" x2="125" y2="100" />
+          <!--Rechts-->
+          <line class="cCube-line" id="iRightTop" x1="275" y1="50" x2="325" y2="0" />
+          <line class="cCube-line" id="iRightMiddleCross" x1="275" y1="75" x2="325" y2="25" />
+          <line class="cCube-line" id="iRightBottom" x1="275" y1="150" x2="325" y2="100" />
+    
+      
+  
+          <defs>
+            <!-- Bild der Holzplatte als Pattern -->
+  
+            <pattern id="woodTexture" patternUnits="userSpaceOnUse" width="1200" height="1200">
+              <image href="images/Holz4.jpg" width="1200" height="1200"/>
+            </pattern>
+    
+          </defs>
+          <g id="polygonGroup">
+            <polygon id="iBoardT" points="0,0 0,0 0,0 0,0" fill="url(#woodTexture)" stroke="#2B1B0F" stroke-width="2" style="z-index: 99; fill-opacity:1;"/>
+            <polygon id="iBoardF" points="0,0 0,0 0,0 0,0" fill="url(#woodTexture)" stroke="#2B1B0F" stroke-width="2" style="z-index: 99; fill-opacity:1;"/>
+            <polygon id="iBoardR" points="0,0 0,0 0,0 0,0" fill="url(#woodTexture)" stroke="#2B1B0F" stroke-width="2" style="z-index: 99; fill-opacity:1;"/>
+          </g>
+          </svg>
+
+    
+  
+  <!--3D-Ansicht-->
+  <a href="Sandbox.html" class="cView">
+  <button>3D-Anischt</button>
+  </a>
+  
+  <!--perspective-->
+  <div class="cPerspBox" id="iPerspBox">
+    <label for="iPerspective">Ansicht</label>
+    <input class="cInputView" type="range" min="25" max="60" id="iPerspective" style="width: 100%;">
+  </div>
+  
+  <button class="cAddBoard" id="iAddBoard" >Holzplatte hinzufügen</button>
+  <button class="cDisplayLine" id="iDisplayLine" >Hilfslinien ausblenden</button>
+  
+  <img src="images/trash.png" class="cTrash" id="iTrash" alt="Warenkorb">
+  
+  </div>
+  
+  <!--EINGABE der Maße-->
+  <div class="cInputField">
+    <span class = "cStepRel">
+    <span class = "cStepNo">2.</span>
+    <span class = "cStepText">Maße auswählen:</span>
+    </span>
+    <br><br><br>
+    <div>
+  
+  <!--__________________________Eingabefelder_Maße_________________________________________-->
+  <!--Materialstärke-->
+  <div style="display: flex; align-items: center; gap: 5px; margin: 5px 0; font-weight: bold;">
+    <label for="iMaterial" style="width: 100px;">Material</label>
+    <input type="range" name="material" class="cInput" min="10" max="50" step="5" id="iMaterial" style="flex: 1;">
+    <output name="materialOutput" id="iMaterialOutput" style="width: 50px; text-align: right;" >15</output>
+    <span>mm</span>
+  </div><br>
+  <!--Höhe-->
+  <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0; font-weight: bold;">
+    <label for="iHight" style="width: 100px;">Höhe</label>
+    <input type="range" name="hight" class="cInput" min="10" max="200" step="10" id="iHight" style="flex: 1;">
+    <output name="hightOutput" id="iHightOutput" style="width: 50px; text-align: right;">100</output>
+    <span>cm</span>
+  </div><br>
+  <!--Breite-->
+  <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0; font-weight: bold;">
+    <label for="iWidth" style="width: 100px;">Breite</label>
+    <input type="range" name="width" class="cInput" value="150" min="10" max="200" step="5" id="iWidth" style="flex: 1;">
+    <output name="widthOutput" id="iWidthOutput" style="width: 50px; text-align: right;">100</output>
+    <span>cm</span>
+  </div><br>
+  <!--Tiefe-->
+  <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0; font-weight: bold;" >
+    <label for="iDeepth" style="width: 100px;">Tiefe</label>
+    <input type="range" name="deepth" class="cInput" min="10" max="200" step="5" id="iDeepth" style="flex: 1;">
+    <output name="deepthOutput" id="iDeepthOutput" style="width: 50px; text-align: right;">100</output>
+    <span>cm</span>
+  </div><br>
+  <!--Mitte V-->
+  <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0; font-weight: bold;" id="displayV">
+    <label for="iMiddleV" style="width: 100px;">Mitte v</label>
+    <input type="range" name="middleV" class="cInput" min="5" max="200" step="5" id="iMiddleV" style="flex: 1;">
+    <output name="middleVOutput" id="iMiddleVOutput" style="width: 50px; text-align: right;">100</output>
+    <span>cm</span>
+  </div><br>
+  <!--Mitte H-->
+  <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0; font-weight: bold;" id="displayH">
+    <label for="iMiddleH" style="width: 100px;">Mitte h</label>
+    <input type="range" name="middleH" class="cInput" min="5" max="200" step="5" id="iMiddleH" style="flex: 1;">
+    <output name="middleHOutput" id="iMiddleHOutput" style="width: 50px; text-align: right;">100</output>
+    <span>cm</span><br>
+  </div><br><br>
+  <!--Holzplatte überstand links/rechts-->
+  <b class="cDisplayB">Holzplatte Überstand</b>
+  <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0; font-weight: bold;" id="displayB1" class="cDisplayB">
+    <label for="iOversetLeRi" style="width: 100px;">links/rechts</label>
+    <input type="range" name="OversetLeRi" class="cInput" min="0" max="50" step="5" id="iOversetLeRi" style="flex: 1;">
+    <output name="OversetLeRiOutput" id="iOversetLeRiOutput" style="width: 50px; text-align: right;">0</output>
+    <span>cm</span><br>
+  </div><br>
+  <!--Holzplatte überstand vorne/hinten-->
+  <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0; font-weight: bold;" id="displayB2" class="cDisplayB">
+    <label for="iOversetFoBa" style="width: 100px;">vorne/hinten</label>
+    <input type="range" name="OversetFoBa" class="cInput" min="0" max="50" step="5" id="iOversetFoBa" style="flex: 1;">
+    <output name="OversetFoBaOutput" id="iOversetFoBaOutput" style="width: 50px; text-align: right;">0</output>
+    <span>cm</span><br>
+  </div>
+  
+  </div>
+  <span class = "cStepRel">
+  <span class = "cStepNo"> 3.</span>
+  <button class="cSubmitSub" id="iShowPopup">Zum Warenkorb hinzufügen</button>
+  </span>
+  </div>
+  </div>
+    <!-- Button der in der Nähe der Linien angezeigt wird -->
+  <button id="iHoverButton" class="cCube-button cRed-button">  Add  </button>
+  
+
+
+
+
+
+
+
+
+  <footer>
+      <div class="cFooter">
+       <div class="cFooterL">
+        <div class="cFooter1"><a>Sonderwunsch?</a><br><br>
+         <b>info@dieSchlosseria.de</b><br><br>
+         <a href="#">   <img src="images/pinterest.png" class="cSocialLogo"></a>
+         <a href="https://www.instagram.com/die.schlosseria/">   <img src="images/Instagram.png" class="cSocialLogo"></a>
+         <a href="#">   <img src="images/linkedIn.png" class="cSocialLogo"></a>
+         <a href="#">   <img src="images/youtube.png" class="cSocialLogo"></a><br>
+         <b class="cFooterDownL">PRODUCE YOUR OWN MEALT FRAME LOCALLY</b>
+        </div>
+       </div>
+      <div class="cFooterR">
+        <div class="cFooterRO"> 
+          <div class="cFooterR1">
+            <b>Infos</b>
+            <span>Impressum</span>
+            <span>AGB</span>
+            <span>Datenschutz</span>
+            <span>Kontakt</span>
+            <span>Hilfe</span>
+          </div>
+          <div class="cFooterR2">
+           <b>Bedingungen</b>
+           <span>Lieferbeding</span>
+           <span>Zahlungsbedingungen</span>
+           <span>Gewährleistung</span>
+           <br><br>
+          </div>
+        </div>
+        <div class="cFooterRU">
+          <div class="cFooterRU1">
+           <span>©All rights reserved Copyrights DIE.SCHLOSSERIA GBR 2025.</span>
+          </div>
+          <div class="cFooterRU2">
+            <img src="images/LogoWhite.png" class="cLogo" alt="Logo">
+           </div>
+        </div>
+       </div>      
+      </div>
+      </div>
+  </footer>  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--___________________POPUP_____________________-->
+   <div class="cOverlay" id="popupOverlay">
+   <div class="cPopup" id="popupContent" >
+   <button class="cCloseButton" id="iClosePopup">X</button>
+   <h4 class="cPopupHeadline">Warenkorb</h4><br><br>
+   <h4 class="cLetter2"> Maße:    </h4>
+   <output id="outDim"></output><br><br>
+  
+   <h4 class="cLetter2"> Total Rahmen:   </h4>
+   <output id="outTotalWare"></output><br><br>
+   <h4 class="cLetter2">Total Holz:</h4>
+   <output id="outTotalWood"></output><br><br>
+   <h4 class="cLetter2">Versand</h4>
+   <output id="outTotalDel"></output><br><br>
+   <h4 class="cLetter2"> Lieferung:   </h4>
+   <output id="outDeliv"></output><br><br>
+   <!--<h4 class="Letter2"> Anzahl Zubehör ges:   </h4>
+   <output id="outExtra"></output>-->
+   <button id="iAdd"> hinzufügen </button>
+  
+   </div>
+  </div>
+  
+  <script src="js/FrameCreator/InputFC.js"></script>
+  <script src="js/FrameCreator/PopUpFC.js"></script>
+  <script src="js/FrameCreator/DrawFC.js"></script>
+
+  
+  </div>
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/standard.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/FrameCreator.css" rel="stylesheet">
+  
+
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D-Anischt</title>
+</head>
+
+<header>
+  <div class="cHead">
+
+    <a href="index.html">
+      <img src="images/Logo.png" class="cLogo" alt="Logo">
+    </a>
+
+    <!-- Neuer Wrapper für das Menü -->
+    <div class="cHeadNavWrapper">
+      <div class="cHeadLine" id="menu">
+        <a class="cHome" href="index.html" >Home</a>
+        <a class="cExamples" href="#">Produkte</a>
+        <a class="cWe" href="#">Über uns</a>
+        <a class="cAccessoires" href="#">Accessoires</a>
+        <a class="cContact" href="#">Kontakt</a>
+      </div>
+
+      <!-- Hamburger Menü Button -->
+      <div class="cMenu-icon" onclick="toggleMenu()">☰</div>
+
+      <!-- Dropdown-Menü -->
+      <div class="cDropdown-menu" id="iDropdownMenu">
+        <a class="cHome" href="#">Home</a>
+        <a class="cExamples" href="#">Produkte</a>
+        <a class="cWe" href="#">Über uns</a>
+        <a class="cAccessoires" href="#">Accessoires</a>
+        <a class="cContact" href="#">Kontakt</a>
+      </div>
+    </div>
+
+    <div class="cRight">
+      <div class="cIntroVideo"><a href="#">▷ </a> Intro-Video</div>
+      <a href="#">
+        <img src="images/shopping-bag.png" class="cWare" alt="Warenkorb">
+      </a>
+    </div>
+  </div>
+
+  <script src="js/header/header.js"></script>
+</header>
+
+
+<body >
+
+
+
+  <div class="c3DBody">
+    <a class="c3D"></a>
+  </div>
+<a href="index.html" style="display: flex; position: absolute; top: 200px; left: 100px; font-size:20px; z-index: 5;">zurück</a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/controls/OrbitControls.js"></script> 
+<script src="convertTo3d.js"></script>
+<script src="3dView.js"></script>
+
+
+
+
+
+</body>
+</html>
